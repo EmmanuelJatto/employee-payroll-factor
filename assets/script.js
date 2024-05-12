@@ -10,6 +10,7 @@ const collectEmployees = function() {
   let lastName = prompt('Enter last name:');
   let salary = prompt('Enter salary:');
   
+
   const addArray = function(firstName, lastName, salary) {
     employeesArray.push({
       firstName: firstName,
@@ -19,12 +20,12 @@ const collectEmployees = function() {
   }
 
   if(confirm('Do you want to add another employee?')) {
-    addArray();
+    addArray(firstName, lastName, salary);
     loop();
   }
   else {
-    addArray();
-    console.log(employeesArray);
+    addArray(firstName, lastName, salary);
+    return employeesArray;
   }
   }
   loop();
