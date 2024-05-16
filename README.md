@@ -5,6 +5,6 @@ This application is a website of a employee payroll.
 
 There was many challenges that occurred, while building the website.  One challenge was figuring out how to push the information that was given into an array, and how that would look/be formatted.  The solution to that problem was creating a function that could push an object into the array.  
 
-![Screenshot of Employee Payroll Tracker Website](./assets/images/screenshot-employee-payroll-factor.jpg)
+![Screenshot of Employee Payroll Tracker Website](./assets/images/new-screenshot.jpg)
 
 [Employee Payroll Tracker](https://emmanueljatto.github.io/employee-payroll-factor/)
