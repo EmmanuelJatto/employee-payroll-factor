@@ -7,3 +7,4 @@ There was many challenges that occurred, while building the website.  One challe
 
 ![Screenshot of Employee Payroll Tracker Website](./assets/images/screenshot-employee-payroll-factor.jpg)
 
+[Employee Payroll Tracker](https://emmanueljatto.github.io/employee-payroll-factor/)
