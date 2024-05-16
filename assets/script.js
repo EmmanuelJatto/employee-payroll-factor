@@ -9,7 +9,6 @@ const collectEmployees = function() {
   let firstName = prompt('Enter first name:');
   let lastName = prompt('Enter last name:');
   let salary = prompt('Enter salary:');
-  
 
   const addArray = function(firstName, lastName, salary) {
     employeesArray.push({
@@ -22,22 +21,32 @@ const collectEmployees = function() {
   if(confirm('Do you want to add another employee?')) {
     addArray(firstName, lastName, salary);
     loop();
-  }
+  } 
   else {
     addArray(firstName, lastName, salary);
-    return employeesArray;
   }
   }
   loop();
+  return employeesArray;
 }
 // Display the average salary
 const displayAverageSalary = function(employeesArray) {
   // TODO: Calculate and display the average salary
+  let totalSalary = 0;
+  for (let i = 0; i < employeesArray.length; i++) {
+    totalSalary += parseFloat(employeesArray[i].salary);
+  }
+  let aVerageSalary = parseFloat(totalSalary / employeesArray.length).toFixed(2);
+  console.log(`The average salary is: $${aVerageSalary}.`);
+  return aVerageSalary;
 }
 
 // Select a random employee
 const getRandomEmployee = function(employeesArray) {
   // TODO: Select and display a random employee
+  const randomEmployee = employeesArray[Math.floor(Math.random() * employeesArray.length)];
+  console.log(`The random employee name is ${randomEmployee.firstName} ${randomEmployee.lastName}.  Their salary is $${randomEmployee.salary}.`);
+  return randomEmployee;
 }
 
 /*
@@ -105,3 +114,5 @@ const trackEmployeeData = function() {
 
 // Add event listener to 'Add Employees' button
 addEmployeesBtn.addEventListener('click', trackEmployeeData);
+
+
